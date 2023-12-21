@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;900&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+*{margin: 0px; padding: 0px; font-size: 24px; font-family: 'Roboto';}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section.fundo-calc{
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(307deg, rgba(255, 255, 255, 0.20) 23.3%, rgba(25, 172, 255, 0.20) 80.27%), rgba(138, 188, 228, 0.10);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    padding: 55px 35px;
+
+}
+
+.resultado{
+    text-align: end;
+    width: 228px;
+    word-break: break-all;
+    
+}
+
+#calculo-visual{
+    font-size: 20px;
+    height: 24px;
+
+}
+
+#calculo{
+    font-size: 40px;
+    font-weight: 600;
+    height: 48px;
+}
+
+button{
+    border: none;
+    background: #8ABCE4;
+    padding: 10px 17px;
+    cursor: pointer;
+    margin: 10px 5px 0px 0px;
+    border-radius: 10px;
+    background: rgba(138, 188, 228, 0.38);
+    transition: 300ms;
+}
+
+button:hover{
+    background: #2d9efa;
+
+}
+
+button#ac{
+    padding: 9px 9px;
+}
+
+button#barra, #ponto{
+    padding: 10px 20px;
+}
+
+button#zero{
+    padding: 10px 47px;
+}
+
+button#mais , #igual{
+    padding: 24px 17px;
+}
+
+
+.calculadora{
+    display: flex;
+    margin-top: 40px;
+}
+
+.calculadora-alinhar{
+    display: flex;
+    flex-direction: column;
+}
+
+.alinhar{
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}

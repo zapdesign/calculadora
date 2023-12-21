@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+    <section class="fundo-calc">
+        <div class="resultado">
+            <p id="calculo-visual"></p>
+            <p id="calculo"></p>
+        </div>
+        <div class="calculadora">
+            <div class="calculadora-alinhar">
+                    <div class="linha">
+                        <button id="ac" class="limpar" onclick="limpar()">Ac</button>
+                        <button class="limpar" onclick="backspace()">&lt;</button>
+                        <button id="barra" class="operador" onclick="insert('', '/')">/</button>
+                    </div>
+                    <div class="linha">
+                        <button class="numeros" onclick="insert(7, '')">7</button>
+                        <button class="numeros" onclick="insert(8, '')">8</button>
+                        <button class="numeros" onclick="insert(9, '')">9</button>
+                    </div>
+                    <div class="linha">
+                        <button class="numeros" onclick="insert(4, '')">4</button>
+                        <button class="numeros" onclick="insert(5, '')">5</button>
+                        <button class="numeros" onclick="insert(6, '')">6</button>
+                    </div>
+                    <div class="linha">
+                        <button class="numeros" onclick="insert(1, '')">1</button>
+                        <button class="numeros" onclick="insert(2, '')">2</button>
+                        <button class="numeros" onclick="insert(3, '')">3</button>
+                    </div>
+                    <div class="linha">
+                        <button id="zero" class="numeros" onclick="insert(0, '')">0</button>
+                        <button id="ponto" class="numeros" onclick="insert('', '.')">.</button>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <button class="operador" onclick="insert('', '*')">*</button>
+                    <button class="operador" onclick="insert('', '-')">-</button>
+                    <button id="mais" class="operador" onclick="insert('', '+')">+</button>
+                    <button id="igual" class="operador" onclick="results()">=</button>
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
